@@ -50,6 +50,8 @@ appear in the notebook.
 **Variables:** `total_bill` vs. `tip`\
 **Encodings:** `sex` is shown with colour (`hue`) and `smoker` with
 marker style.
+<img width="563" height="433" alt="plot_01" src="https://github.com/user-attachments/assets/2e49ce00-0048-4d1e-924d-59105772eef1" />
+
 
 This plot is used to explore how tip amount varies with the total bill
 and to compare the displayed groups by sex and smoking status.
@@ -57,6 +59,7 @@ and to compare the displayed groups by sex and smoking status.
 ### 2. Bar Plot --- Titanic Fare by Passenger Class and Sex
 
 **Variables:** `Pclass` vs. `Fare`, grouped by `Sex`.
+<img width="571" height="432" alt="plot_02" src="https://github.com/user-attachments/assets/3796441c-28cf-4b9a-bb88-919d92220cee" />
 
 This visualization compares fares across passenger classes and sex
 categories. It helps inspect differences in the average fare represented
@@ -65,6 +68,8 @@ by each group.
 ### 3. Box Plot --- Age by Sex and Survival
 
 **Variables:** `Sex` vs. `Age`, with `Survived` as the hue.
+<img width="563" height="432" alt="plot_03" src="https://github.com/user-attachments/assets/bb6d539a-54d4-48df-a127-70cf7040044d" />
+
 
 The box plot compares age distributions across sex and survival groups,
 showing the median, spread, and potential outliers.
@@ -73,8 +78,10 @@ showing the median, spread, and potential outliers.
 
 The notebook overlays age-density curves for passengers with
 `Survived = 0` and `Survived = 1`.
+<img width="585" height="432" alt="plot_04" src="https://github.com/user-attachments/assets/2eafa25f-d624-4bc8-b0e2-e9419f3743c1" />
 
-**Insights recorded in the notebook:** - The author notes that children
+
+**Insights recorded in the notebook:** - The  children
 younger than 15 appear to have had higher survival. - The author notes
 that deaths appear prominent among passengers aged 20--30. - The author
 notes that passengers aged 60 and above appear to have had higher
@@ -95,6 +102,8 @@ A crosstab counts survival outcomes within each passenger class:
   3rd class                             372              119
 
 The heatmap visualizes these counts.
+<img width="539" height="432" alt="plot_05" src="https://github.com/user-attachments/assets/7e8d4416-0f5b-4934-95a1-7edf5c5cd3a0" />
+
 
 **Insight recorded in the notebook:** third-class passengers had
 substantially more deaths, while first-class passengers had fewer
@@ -114,6 +123,8 @@ multiplies it by 100.
 
 **Insight:** the recorded survival rate is highest for first class and
 lowest for third class.
+<img width="543" height="432" alt="plot_06" src="https://github.com/user-attachments/assets/6af84f86-9bf9-43b4-851d-6c3dc3f6479b" />
+
 
 ### 7. Survival Rate by Sex
 
@@ -123,6 +134,9 @@ The notebook calculates survival percentage by sex.
   -------- ---------------
   Female            74.20%
   Male              18.89%
+  
+  <img width="543" height="466" alt="plot_07" src="https://github.com/user-attachments/assets/dc9f0529-741e-46fe-beed-81bb8977f9dd" />
+
 
 **Insight:** the notebook's results show a much higher survival rate
 among female passengers than male passengers in this dataset.
@@ -136,6 +150,8 @@ The notebook plots the mean of `Survived` by `Embarked`.
   `C`                         55.36%
   `Q`                         38.96%
   `S`                         33.70%
+  <img width="547" height="429" alt="plot_08" src="https://github.com/user-attachments/assets/53a5384c-2b78-43db-8367-bdfc4a78e023" />
+
 
 **Insight:** among the embarkation groups shown, `C` has the highest
 observed survival rate and `S` the lowest. This is a descriptive
@@ -147,6 +163,8 @@ difference.
 Before plotting, the notebook selects the first three columns of the
 Iris dataset and computes their correlation matrix. It then creates a
 pair plot of the Iris features, using `species` as the hue.
+<img width="1112" height="986" alt="plot_09" src="https://github.com/user-attachments/assets/aed454ae-2958-4812-8dc4-ade861447466" />
+
 
 This allows pairwise feature relationships and species-level separation
 to be explored visually.
@@ -155,6 +173,8 @@ to be explored visually.
 
 The notebook groups the `flights` dataset by `year`, sums monthly
 passenger counts, and plots the annual totals.
+<img width="580" height="432" alt="plot_10" src="https://github.com/user-attachments/assets/f1c300dc-f840-499d-a234-203a972607df" />
+
 
 The displayed totals increase from **1,520 in 1949** to **5,714 in
 1960**, showing an upward trend across the years covered by the dataset.
@@ -163,6 +183,8 @@ The displayed totals increase from **1,520 in 1949** to **5,714 in
 
 The notebook creates a pivot table with: - **Rows:** month -
 **Columns:** year - **Values:** passenger count
+<img width="539" height="454" alt="plot_11" src="https://github.com/user-attachments/assets/ccba2cb9-0519-4f8d-bee3-dd510ab6d7e0" />
+
 
 A heatmap then visualizes the monthly passenger counts across years,
 making seasonal patterns and changes over time easier to compare.
@@ -197,54 +219,4 @@ making seasonal patterns and changes over time easier to compare.
 
 ------------------------------------------------------------------------
 
-*This README follows the order of the analysis and charts in the
-notebook and preserves the observations written alongside them.*
-
-## Plot Gallery
-
-The following figures are extracted from the notebook outputs and displayed in the same order as they appear in `Bivariate.ipynb`.
-
-### Scatter Plot — Tips Dataset
-
-![Scatter Plot — Tips Dataset](plots/plot_01.png)
-
-### Bar Plot — Titanic Fare by Passenger Class and Sex
-
-![Bar Plot — Titanic Fare by Passenger Class and Sex](plots/plot_02.png)
-
-### Box Plot — Age by Sex and Survival
-
-![Box Plot — Age by Sex and Survival](plots/plot_03.png)
-
-### Age Distribution — Survivors vs. Non-survivors
-
-![Age Distribution — Survivors vs. Non-survivors](plots/plot_04.png)
-
-### Heatmap — Passenger Class vs. Survival Counts
-
-![Heatmap — Passenger Class vs. Survival Counts](plots/plot_05.png)
-
-### Survival Rate by Passenger Class
-
-![Survival Rate by Passenger Class](plots/plot_06.png)
-
-### Survival Rate by Sex
-
-![Survival Rate by Sex](plots/plot_07.png)
-
-### Survival Rate by Embarkation Port
-
-![Survival Rate by Embarkation Port](plots/plot_08.png)
-
-### Pair Plot — Iris Dataset
-
-![Pair Plot — Iris Dataset](plots/plot_09.png)
-
-### Line Plot — Annual Flight Passenger Totals
-
-![Line Plot — Annual Flight Passenger Totals](plots/plot_10.png)
-
-### Heatmap — Monthly Flight Passengers by Year
-
-![Heatmap — Monthly Flight Passengers by Year](plots/plot_11.png)
 
